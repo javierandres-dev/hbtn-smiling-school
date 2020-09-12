@@ -1,0 +1,138 @@
+/* SUMMARY
+  GLOBALS
+    variables
+  HEADER
+*/
+/*  GLOBALS
+================================ */
+/* variables */
+:root {
+  --purple-color: #c271ff;
+  --black-color: #071629;
+  --gray-color: #979797;
+  --white-color: #ffffff;
+  --font-family-base: "Source Sans Pro", sans-serif;
+  --font-weight-base-ExtraLight: 200;
+  --font-weight-base-Light: 300;
+  --font-weight-base-Regular: 400;
+  --font-weight-base-Semibold: 600;
+  --font-weight-base-Bold: 700;
+  --font-weight-base-Black: 900;
+  --font-family-aux: "Spin Cycle OT", sans-serif;
+}
+/* tags */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-weight-base-Regular);
+}
+/* commons */
+.text-purple {
+  color: var(--purple-color);
+}
+.text-black {
+  color: var(--black-color);
+}
+.text-gray {
+  color: var(--gray-color);
+}
+.bg-purple {
+  background-color: var(--purple-color);
+}
+.bg-black {
+  background-color: var(--black-color);
+}
+.bg-gray {
+  background-color: var(--gray-color);
+}
+/*
+================================ */
+.containerA {
+  height: 1386px;
+  background-color: var(--black-color);
+}
+.jumbotron {
+  background-image: url(../images/pic_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/*  HEADER
+================================ */
+/* logo */
+.boxBrand {
+  width: 160px;
+  height: 80px;
+}
+.imgSmile {
+  height: 32px;
+}
+.imgLogo {
+  height: 32px;
+}
+/* menu */
+.navbar {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-nav {
+  position: absolute;
+  top: 80px;
+  left: 160px;
+}
+.nav-link {
+  font-weight: var(--font-weight-base-Light);
+}
+.holberton_school-icon-menu {
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
+/*  SCHOOLED
+================================ */
+.schooled {
+  margin: 160px auto;
+}
+.titleA {
+  font-size: 3.5rem;
+  font-weight: var(--font-weight-base-Bold);
+  letter-spacing: 2px;
+}
+.list-inline {
+  font-weight: var(--font-weight-base-Semibold);
+}
+.btnRegister {
+  padding: 0.7rem 1rem;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  border: 1px solid var(--purple-color);
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+}
+/*  PROS
+================================ */
+.titleB {
+  font-weight: var(--font-weight-base-ExtraLight);
+}
+.titleB span {
+  font-weight: var(--font-weight-base-Semibold);
+}
+.pros {
+  padding: 4rem 0;
+}
+.pro {
+  width: 150px;
+}
+.proName {
+  font-weight: var(--font-weight-base-Semibold);
+  letter-spacing: 1.5px;
+}
+.proAward {
+  color: var(--gray-color);
+  font-weight: var(--font-weight-base-Light);
+}
