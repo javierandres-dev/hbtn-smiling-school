@@ -1,11 +1,15 @@
 /* SUMMARY
   GLOBALS
-    variables
+    custom propierties
+    tags
+  HERO
   HEADER
+  SCHOOLED
+  PROS
 */
 /*  GLOBALS
 ================================ */
-/* variables */
+/* custom propierties */
 :root {
   --purple-color: #c271ff;
   --black-color: #071629;
@@ -44,7 +48,7 @@ body {
 .bg-gray {
   background-color: var(--gray-color);
 }
-/*
+/* HERO
 ================================ */
 .containerA {
   height: 1386px;
@@ -56,6 +60,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+@media (min-width: 768px) {
+  .containerA {
+    height: 1093px;
+  }
+  .jumbotron {
+    background-position-y: 2.5rem;
+    transform: scale(1.1, 1.1);
+  }
 }
 /*  HEADER
 ================================ */
@@ -91,6 +104,23 @@ body {
   font-weight: 100;
   font-size: 1.5rem;
   color: var(--white-color);
+}
+@media (min-width: 768px) {
+  .boxHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .navbar-nav {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 /*  SCHOOLED
 ================================ */
