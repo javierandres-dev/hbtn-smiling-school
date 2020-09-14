@@ -33,64 +33,66 @@
     <title>Smile School</title>
   </head>
   <body>
-    <!-- HERO -->
     <div class="containerA">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <!-- HEADER -->
-          <header class="boxHeader">
-            <!-- logo -->
-            <div
-              class="boxBrand mx-auto d-flex flex-wrap justify-content-center align-content-between"
+      <!-- HERO IMAGE -->
+      <div class="jumbotron jumbotron-fluid p-md-3">
+        <!-- HEADER -->
+        <header
+          class="d-md-flex flex-md-row justify-content-between align-items-center"
+        >
+          <!-- logo -->
+          <div
+            class="boxBrand d-flex flex-column align-items-center flex-md-row justify-content-md-between"
+          >
+            <img class="imgSmile" src="./images/smile_off.png" alt="" />
+            <img class="imgLogo mt-3 mt-md-0" src="./images/logo.png" alt="" />
+          </div>
+          <!-- menu -->
+          <nav class="navbar navbar-expand-md navbar-light">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <img class="imgSmile" src="./images/smile_off.png" alt="" />
-              <img class="imgLogo" src="./images/logo.png" alt="" />
-            </div>
-            <!-- menu -->
-            <nav class="navbar navbar-expand-md navbar-light">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="holberton_school-icon-menu"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav py-4">
-                  <a class="nav-link align-self-center text-white p-2" href="#"
-                    >COURSES</a
-                  >
-                  <a class="nav-link align-self-center text-white p-2" href="#"
-                    >PRICING</a
-                  >
-                  <a class="nav-link align-self-center text-white p-2" href="#"
-                    >LOGIN</a
-                  >
-                </div>
+              <span class="holberton_school-icon-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mt-3 mt-md-0">
+                <a class="nav-link align-self-center text-white p-2" href="#"
+                  >COURSES</a
+                >
+                <a class="nav-link align-self-center text-white p-2" href="#"
+                  >PRICING</a
+                >
+                <a class="nav-link align-self-center text-white p-2" href="#"
+                  >LOGIN</a
+                >
               </div>
-            </nav>
-          </header>
-          <!-- SCHOOLED -->
-          <section class="text-white d-flex flex-column text-center schooled">
+            </div>
+          </nav>
+        </header>
+        <!-- SCHOOLED -->
+        <div class="container">
+          <section class="schooled text-white d-flex flex-column text-center">
             <h1 class="titleA">Get schooled</h1>
-            <ul class="list-inline mx-auto my-4">
+            <ul class="list-inline mx-auto my-4 mt-md-0 mb-md-3">
               <li class="list-inline-item">SMILES</li>
               <li class="list-inline-item mx-5">GRIN</li>
               <li class="list-inline-item">LAUGH</li>
             </ul>
-            <button class="mx-auto mt-2 btnRegister">REGISTER FOR FREE</button>
+            <button class="btnRegister mx-auto mt-2">REGISTER FOR FREE</button>
           </section>
           <!-- PROS -->
           <section class="text-white text-center">
             <h2 class="titleB">
               <span class="text-purple">Learn</span> from the pros
             </h2>
-            <div class="d-flex flex-wrap justify-content-between pros">
-              <figure class="mb-5 pro">
+            <div class="pros d-flex flex-wrap justify-content-between mt-md-5">
+              <figure class="pro mb-5">
                 <img
                   class="img-fluid rounded-circle"
                   src="/images/profile_1.jpg"
