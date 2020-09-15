@@ -1,7 +1,8 @@
 /* SUMMARY
   GLOBALS
-    custom propierties
     tags
+    custom propierties
+    owns
   HERO IMAGE
   HEADER
   SCHOOLED
@@ -9,6 +10,11 @@
 */
 /*  GLOBALS
 ================================ */
+/* tags */
+button:hover,
+button:active {
+  opacity: 0.9;
+}
 /* custom propierties */
 :root {
   --purple-color: #c271ff;
@@ -24,12 +30,46 @@
   --font-weight-base-Black: 900;
   --font-family-aux: "Spin Cycle OT", sans-serif;
 }
-/* tags */
-body {
+/* owns */
+.ff-base {
   font-family: var(--font-family-base);
-  font-size: var(--font-weight-base-Regular);
 }
-/* commons */
+.fw-base {
+  font-weight: var(--font-weight-base-Regular);
+}
+.fw-base-el {
+  font-weight: var(--font-weight-base-ExtraLight);
+}
+.fw-base-l {
+  font-weight: var(--font-weight-base-Light);
+}
+.fw-base-sb {
+  font-weight: var(--font-weight-base-Semibold);
+}
+.fw-base-b {
+  font-weight: var(--font-weight-base-Bold);
+}
+.fw-base-bl {
+  font-weight: var(--font-weight-base-Black);
+}
+.ls-0 {
+  letter-spacing: 0;
+}
+.ls-1 {
+  letter-spacing: 0.25px;
+}
+.ls-2 {
+  letter-spacing: 0.5px;
+}
+.ls-3 {
+  letter-spacing: 1px;
+}
+.ls-4 {
+  letter-spacing: 1.5px;
+}
+.ls-5 {
+  letter-spacing: 2px;
+}
 .text-purple {
   color: var(--purple-color);
 }
@@ -61,7 +101,6 @@ body {
 }
 /* HERO IMAGE
 ================================ */
-
 .jumbotron {
   background-color: var(--black-color);
   background-image: url(../images/pic_1.jpg);
@@ -69,24 +108,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  opacity: 0.8;
 }
-@media (min-width: 768px) {
-  /*
+@media (min-width: 992px) {
   .jumbotron {
-    background-position-y: 2.5rem;
-    transform: scale(1.1, 1.1);
+    background-position-y: 0rem;
   }
-  */
-}
-@media (min-width: 1024px) {
 }
 /*  HEADER
 ================================ */
 /* logo */
-.boxBrand {
-  width: 160px;
-  margin: auto;
-}
 .imgSmile {
   height: 32px;
 }
@@ -96,7 +127,7 @@ body {
 /* menu */
 .navbar {
   position: absolute;
-  top: 1rem;
+  top: -0.5rem;
   left: 0;
 }
 .navbar-toggler {
@@ -107,20 +138,11 @@ body {
   top: 80px;
   left: 160px;
 }
-.nav-link {
-  font-weight: var(--font-weight-base-Light);
-}
 .holberton_school-icon-menu {
   font-weight: 100;
   font-size: 1.5rem;
-  color: var(--white-color);
 }
 @media (min-width: 768px) {
-  .boxBrand {
-    width: 240px;
-    margin: 0;
-    padding: 0.5rem 1rem;
-  }
   .navbar {
     position: relative;
     top: auto;
@@ -135,24 +157,10 @@ body {
 /*  SCHOOLED
 ================================ */
 .schooled {
-  margin: 160px auto;
+  margin: 170px auto;
 }
 .titleA {
   font-size: 3.5rem;
-  font-weight: var(--font-weight-base-Bold);
-  letter-spacing: 2px;
-}
-.list-inline {
-  font-weight: var(--font-weight-base-Semibold);
-}
-.btnRegister {
-  padding: 0.7rem 1rem;
-  background-color: var(--purple-color);
-  color: var(--white-color);
-  border: 1px solid var(--purple-color);
-  border-radius: 1.5rem;
-  font-size: 0.8rem;
-  letter-spacing: 1.5px;
 }
 @media (min-width: 768px) {
   .schooled {
@@ -165,27 +173,26 @@ body {
     margin-bottom: -0.5rem;
   }
 }
+@media (min-width: 992px) {
+  .schooled {
+    margin: 120px auto;
+  }
+  .titleA {
+    font-size: 6rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+}
 /*  PROS
 ================================ */
-.titleB {
-  font-weight: var(--font-weight-base-ExtraLight);
-}
-.titleB span {
-  font-weight: var(--font-weight-base-Semibold);
-}
 .pros {
   padding: 4rem 0;
 }
 .pro {
-  width: 150px;
+  width: 144px;
 }
-.proName {
-  font-weight: var(--font-weight-base-Semibold);
-  letter-spacing: 1.5px;
-}
-.proAward {
-  color: var(--gray-color);
-  font-weight: var(--font-weight-base-Light);
-}
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .pro {
+    width: 150px;
+  }
 }
