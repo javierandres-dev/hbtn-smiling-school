@@ -5,8 +5,11 @@
     owns
   HERO IMAGE
   HEADER
+    logo
+    menu
   SCHOOLED
   PROS
+  CAROUSEL
 */
 /*  GLOBALS
 ================================ */
@@ -93,10 +96,18 @@ button:active {
   height: 1386px;
   background-color: var(--black-color);
 }
+.containerB {
+  width: 100%;
+  height: 591px;
+}
 @media (min-width: 768px) {
   .containerA {
     width: 100%;
     height: 1093px;
+  }
+  .containerB {
+    width: 100%;
+    height: 392px;
   }
 }
 /* HERO IMAGE
@@ -194,5 +205,16 @@ button:active {
 @media (min-width: 992px) {
   .pro {
     width: 150px;
+  }
+}
+/*  CAROUSEL
+================================ */
+.arrows {
+  height: 3rem;
+  margin-top: -10rem;
+}
+@media (min-width: 768px) {
+  .arrows {
+    margin-top: 0;
   }
 }
