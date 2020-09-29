@@ -209,12 +209,3 @@ button:active {
 }
 /*  CAROUSEL
 ================================ */
-.arrows {
-  height: 3rem;
-  margin-top: -10rem;
-}
-@media (min-width: 768px) {
-  .arrows {
-    margin-top: 0;
-  }
-}
